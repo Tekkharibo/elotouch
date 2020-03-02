@@ -149,7 +149,7 @@ def main():
         UINPUT_DEVICE = uinput.Device([uinput.BTN_TOUCH,
                                        uinput.ABS_X + (0, 4095, 0, 0), 
                                        uinput.ABS_Y + (0, 4095, 0, 0), 
-                                       uinput.ABS_PRESSURE],
+                                       uinput.ABS_PRESSURE + (0, 255, 0, 0)],
                                       name='elotouch.py')
     
     try:
